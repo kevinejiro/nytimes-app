@@ -1,68 +1,93 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+[![CircleCI](https://circleci.com/gh/kevinejiro/nytimes-app/tree/develop.svg?style=svg)](https://circleci.com/gh/kevinejiro/nytimes-app/tree/develop)
+[![Maintainability](https://api.codeclimate.com/v1/badges/fbcb01fd4f9b20503d67/maintainability)](https://codeclimate.com/github/kevinejiro/nytimes-app/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/fbcb01fd4f9b20503d67/test_coverage)](https://codeclimate.com/github/kevinejiro/nytimes-app/test_coverage)
 
-In the project directory, you can run:
+## NyTimes App
 
-### `npm start`
+A simple Web-App utilizing the NY Times API most viewed section. **Built for Mobile.**
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br />
+<br />
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+<img width="375" alt="nytimes-app-screenshot" src="./src/assets/nytimes1.PNG">
+<br />
+<img width="375" alt="nytimes-app-screenshot" src="./src/assets/nytimes2.PNG">
+<br />
 
-### `npm test`
+# Table of Contents
+- [Getting Started](#getting-started)
+- [Technology Stack](#technology-stack)
+  * [Dependencies](#dependencies)
+- [Installation and Usage](#installation)
+- [Testing](#testing)
+- [License](#license)
+- [FAQ](#faqs)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
+This is a javascript application built with [**React**](https://reactjs.org/) libary on the nodejs platform. 
 
-### `npm run build`
+## Technology Stack
+**UI & Templates**
+1. HTML, SCSS, CSS
+2. Bootstrap 4 CSS Framework
+3. Reactstrap
+4. Javascript(React)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### Dependencies
+* Node
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+1. Install [**Node JS**](https://nodejs.org/en/).
+2. To Clone the Run `npm clone https://github.com/kevinejiro/nytimes-app.git`
+3. [**cd**] into the root of the **project directory**.
+4. Run `npm install` on the terminal to install Dependecies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+6. Start the application:
+**_Different Build Environment_**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Run Development Build**
+```
+npm run start:dev
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Run Production Build**
+```
+npm run build
+```
+```
+npm run start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Usage
+- Start app development with `npm run start` or `npm start`
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Testing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To tests - Run `npm run test` on the terminal while within the **project root directory**.
 
-### Code Splitting
+Testing is achieved through the use of **jest** package. **jest** is used to test javascript code in React applications.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Questions
+For more details contact kevinejiro@gmail.com
 
-### Analyzing the Bundle Size
+### Support or Contribution
+For any suggestions or contributions  please do not hesistate to contact me
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Contributions to this project are welcomed by all, If you need to contribute to this project, follow the steps below
+* **Fork** the repository
+* Follow [Installation and Setup](#installation-and-setup) as explained earlier
+* Create a branch off **development** for the feature you wish to add
+* Make neccessary changes, commit and raise a pull request against develop.
+**Note** when making contributions, please endevour to follow the [Airbnb](https://github.com/airbnb/javascript) javascript style guide.
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## License
+This project is authored by **Ejiro Ogidigbo** (kevinejiro@gmail.com) and is licensed for your use, modification and distribution under the **MIT** license.
+[MIT][license] © [ejiro-ogidigbo][author]
+<!-- Definitions -->
+[license]: LICENSE
+[author]: ejiro-ogidigbo
