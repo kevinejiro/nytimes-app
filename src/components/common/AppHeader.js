@@ -5,7 +5,7 @@ import { Navbar, Nav, NavItem } from 'reactstrap';
 import logo from '../../assets/nytimes-logo.png';
 
 /**
- * @returns 
+ * @returns {JSX} JSX element
  */
 function AppHeaderComponent(props) {
 

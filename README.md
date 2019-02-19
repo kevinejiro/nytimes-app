@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [![Maintainability](https://api.codeclimate.com/v1/badges/fbcb01fd4f9b20503d67/maintainability)](https://codeclimate.com/github/kevinejiro/nytimes-app/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/fbcb01fd4f9b20503d67/test_coverage)](https://codeclimate.com/github/kevinejiro/nytimes-app/test_coverage)
 
-## NyTimes App
+## NYTimes App
 
 A simple Web-App utilizing the NY Times API most viewed section. **Built for Mobile.**
 

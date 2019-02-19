@@ -10,11 +10,20 @@ import { AppFooter } from '../common/AppFooter.js';
 import { ArticleList } from '../ArticleList/ArticleList.js';
 import { ArticleDetails } from '../ArticleDetails/ArticleDetails.js';
 
+/**
+ *
+ * @class App
+ * @extends {Component}
+ */
 class App extends Component {
 
   state = { articles: [], isLoading: false }
 
-  async componentDidMount() {
+/**
+ *
+ * @memberof App
+ */
+async componentDidMount() {
     this.setState({ isLoading: true });
     try {
       const response = await axios.get('https://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/7.json?api-key=MJ4FfwRcFW2UD0b72IBaFxA0aFMnRafp')

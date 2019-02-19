@@ -2,8 +2,14 @@ import React, { memo } from 'react';
 import { Card, CardBody, CardTitle, CardText, CardImg, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
+import { NotFound } from '../common/NotFound';
 import './ArticleDetails.scss';
 
+/**
+ *
+ * @param {*} props
+ * @returns {JSX} JSX element
+ */
 function ArticleDetailsComponent(props) {
 
 	const { articleId } = props.match.params;
@@ -11,10 +17,7 @@ function ArticleDetailsComponent(props) {
 	const articleIndex = props.articles.findIndex(article => Number(article.id) === Number(articleId));
 	
 	if (articleIndex === -1) {
-		// RENDER PAGE SAYING ARTICLE NOT FOUND
-		return <div className="text-center spinner-dark">
-			No such article
-				</div>;
+		return <NotFound />
 	}
 	const article = props.articles[articleIndex];
 	return (
@@ -23,6 +26,7 @@ function ArticleDetailsComponent(props) {
 				<Row>
 					<Col sm={6} xs={12} lg={4}>
 						<CardImg 
+							className='img-responsive'
 							top 
 							src={article.media[0]['media-metadata'][4].url} 
 							alt="airticleImage" 
@@ -31,7 +35,7 @@ function ArticleDetailsComponent(props) {
 					<Col sm={6} xs={12} lg={8}>
 						<CardBody>
 							<CardTitle>{article.title}</CardTitle>
-							<CardText>{article.abstract}s</CardText>
+							<CardText>{article.abstract}</CardText>
 							<a href={article.url} target="_blank" rel="noopener noreferrer">
 								<CardText className="continue-link">
 									Continue Reading...
@@ -72,7 +76,5 @@ function ArticleDetailsComponent(props) {
 			</Card>
 		</div>);
 };
-ArticleDetailsComponent.propTypes = {
 
-};
 export const ArticleDetails = memo(ArticleDetailsComponent);

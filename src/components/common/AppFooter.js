@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 
 /**
- * @returns 
+ * @returns {JSX} JSX element
  */
 function AppFooterComponent() {
 	return (

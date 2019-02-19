@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 
 import './Article.scss'
 
+/**
+ *
+ * @param {*} props
+ * @returns {JSX} JSX element
+ */
 function ArticleComponent(props) {
   return (
 		<Link to={`/${props.id}`}>
