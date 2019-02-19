@@ -11,9 +11,7 @@ A simple Web-App utilizing the NY Times API most viewed section. **Built for Mob
 <br />
 <br />
 
-<img width="375" alt="nytimes-app-screenshot" src="./src/assets/nytimes1.PNG">
-<br />
-<img width="375" alt="nytimes-app-screenshot" src="./src/assets/nytimes2.PNG">
+<img width="250" height="500" alt="nytimes-app-screenshot" src="./src/assets/nytimes1.PNG">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img width="250" height="500" alt="nytimes-app-screenshot" src="./src/assets/nytimes2.PNG">
 <br />
 
 # Table of Contents
